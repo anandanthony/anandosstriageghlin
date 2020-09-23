@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>
+        @Html.ActionLink("Handled Exception", "handledException", "Home", new { @class = "btn btn-default" })
+        @Html.ActionLink("Un-Handled Exception", "unhandledException", "Home", new { @class = "btn btn-primary" })
+    </p>
+    <p>
+        <h6>Results:</h6>
+        <i>@ViewBag.rException</i>
+    </p>
+</div>
